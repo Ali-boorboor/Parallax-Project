@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./assets/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Site</title>
+  </head>
+  <body class="font-my-font grid grid-rows-[repeat(3,100vh)] overflow-x-hidden scrollbar scrollbar-thumb-orange scrollbar-track-white selection:bg-orange">
+      <header class="flex flex-col items-center relative">
+        <nav class="flex items-center justify-between w-full p-8 z-30 list-none text-orange font-bold lgx:bg-darkPurple lgx:bg-opacity-70">
+          <p class="text-3xl transition-all duration-500 p-2 rounded-full cursor-pointer hover:bg-orange hover:text-white hover:ring-white hover:ring-2">Logo</p>
+          <svg id="close-menu-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white bg-orange cursor-pointer ring-2 ring-white z-50 hidden -translate-x-[70%] translate-y-[500%] rounded-full">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+          <svg id="open-menu-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 z-10 text-white bg-orange cursor-pointer ring-2 ring-white md:hidden rounded-full">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>        
+          <div id="menu-items" class="flex gap-4 mdx:hidden">
+            <li class="rounded-full p-2 transition-all duration-500 hover:bg-white hover:ring-2 hover:ring-orange"><a href="#" class="">Home</a></li>
+            <li class="rounded-full p-2 transition-all duration-500 hover:bg-white hover:ring-2 hover:ring-orange"><a href="#" class="">Products</a></li>
+            <li class="rounded-full p-2 transition-all duration-500 hover:bg-white hover:ring-2 hover:ring-orange"><a href="#" class="">About US</a></li>
+            <li class="rounded-full p-2 transition-all duration-500 hover:bg-white hover:ring-2 hover:ring-orange"><a href="#" class="">Contact Us</a></li>
+          </div>
+        </nav>
+        <h1 id="header-title" class="absolute top-2/4 -translate-y-1/2 text-white font-bold text-2xl sm:text-5xl drop-shadow-2xl z-10">Parallax Site Design</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="z-20 w-10 h-10 absolute top-[60%] right-1/2 -translate-x-1/2 -translate-y-1/2 bg-orange rounded-full animate-bounce ring-2 ring-white">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </svg>      
+        <img src="./assets/dry-jungle.jpg" alt="dry-jungle" class="w-full h-full absolute inset-0">
+        <img id="moon" src="./assets/purple-moon.png" alt="purple-moon" class="w-24 h-24 bg-cover absolute top-4">
+        <img id="front-mountain" src="./assets/front-mountain.png" alt="front-dark-mountain" class="w-full h-60 sm:h-[16rem] bg-cover absolute bottom-0">
+        <img id="left-cloud" src="./assets/cloud.png" alt="cloud" class="absolute top-8 right-2/4 sm:w-80 w-32 h-24 sm:h-32 opacity-80">
+        <img id="right-cloud" src="./assets/cloud.png" alt="cloud" class="absolute top-10 left-2/4 sm:w-80 w-32 h-24 sm:h-32 opacity-80">
+      </header>
+      <main class="flex flex-col gap-8 px-6 py-20 bg-darkPurple z-30">
+        <h2 id="main-title" class="text-white font-bold text-2xl sm:text-5xl drop-shadow-2xl md:-translate-x-full">😎 Parallax Scroll Effect 😎</h2>
+        <div class="w-full h-4 bg-darkPurple rounded-full">
+          <div id="main-progress-text" class="w-0 h-full bg-orange rounded-full"></div>
+        </div>
+        <p id="main-text" class="p-2 text-white sm:text-justify overflow-y-auto scrollbar scrollbar-thumb-orange scrollbar-track-white">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto sit, autem impedit maxime placeat explicabo, odio velit tenetur nisi distinctio nam itaque asperiores ipsam fugiat quam odit possimus ullam omnis?
+          Nostrum fugiat natus amet ea, odio doloribus dolorum nam maxime ipsum asperiores rerum reiciendis quod voluptatem exercitationem et iure labore laudantium nobis tempora obcaecati, excepturi eligendi esse? Tempore, quis ex.
+          Voluptates quam vitae deserunt ipsam ad eveniet doloribus distinctio asperiores dicta dolore. Nam libero quibusdam, commodi, architecto modi animi repellat, omnis delectus quasi ipsam esse ipsa dolores quis aliquam consequuntur!
+          Incidunt, consectetur accusamus. Necessitatibus, sed error, cupiditate, quod quis doloremque commodi est asperiores vitae quibusdam dicta dolore eligendi in expedita dolores. Numquam neque laboriosam, nostrum odio inventore nobis obcaecati itaque?
+          Nam facere eius harum iusto nesciunt at enim, qui aut tempore praesentium aperiam fugiat rem, id nostrum quos error! Dolorem tempora error nisi magnam rem reiciendis adipisci, perferendis harum aliquid.
+          Aut magnam assumenda voluptates accusantium maiores, alias, reiciendis officiis recusandae hic, dolore temporibus. Beatae impedit earum, reiciendis, ut cumque explicabo sint eum praesentium corporis rerum illum dolorum autem, veritatis nihil!
+          Voluptatibus alias quisquam, sunt, quia velit, recusandae saepe itaque consectetur quos quidem quibusdam ipsa eaque dolores nisi id vero nobis ratione molestiae. Quisquam, amet labore eum assumenda beatae ut ipsa?
+          Iure nihil repudiandae ad rerum quaerat, ab harum earum totam veniam blanditiis error aliquid modi amet, suscipit inventore animi voluptates dolor incidunt maiores sit eaque, corrupti numquam! Quia, neque doloremque.
+          Distinctio sunt consequuntur repudiandae aspernatur qui corrupti! Aliquid architecto ex incidunt ullam deserunt deleniti laudantium corporis aliquam aspernatur modi, rerum consequatur voluptatibus quas, provident dicta! Modi sunt minus nihil fuga.
+          Incidunt nobis quam fugiat harum molestiae quae est sapiente unde rerum, at hic voluptatibus ab ipsa laboriosam, obcaecati sequi nam nesciunt vitae! Quibusdam odit deserunt veniam consequatur tempora atque libero.
+          Sint mollitia repellat sapiente quidem, doloribus error consequatur sit consequuntur, aspernatur, quod id. Debitis, accusamus esse ducimus voluptate corrupti, modi, excepturi nulla doloremque aut ea eos porro alias tenetur natus.
+          Eos, corrupti. Atque corporis eos laudantium pariatur ad necessitatibus sapiente culpa perspiciatis cupiditate ab explicabo dolores molestias ipsam voluptatibus, ea adipisci cum! Dolores sapiente nihil perspiciatis temporibus. Nobis, reiciendis id.
+          Obcaecati provident necessitatibus, libero dignissimos fuga quod perspiciatis tempore at voluptatum optio dolorum, molestiae animi eveniet officiis tenetur maiores delectus eos saepe, cum quisquam modi distinctio commodi! Quo, odit quod.
+          Voluptatem minus voluptas ducimus repellendus. Sed, laboriosam ipsum explicabo labore tempora et totam dignissimos facere aliquam a placeat quod debitis nisi illo quisquam atque hic voluptatem, ipsam, iure ad consequuntur.
+          Sequi labore optio reprehenderit earum odio, delectus porro. Minima voluptatum, expedita quo asperiores est at quia quibusdam ipsum placeat suscipit ut culpa doloribus eaque in earum consequuntur aspernatur accusamus animi!
+          Laudantium, ratione. Dolores, repellat ipsam provident consequatur eius eum? Reprehenderit, itaque cum! Temporibus odit et ut! Est vero ea ut nemo reiciendis iste aut nobis deleniti hic. Soluta, at suscipit.
+          Quam voluptatibus quia recusandae! Voluptate sequi dolorem repudiandae fuga recusandae modi quibusdam dignissimos non ullam asperiores, quam natus inventore suscipit in aliquid hic at consequuntur! Tempore quibusdam repellendus voluptatem placeat!
+          Odit rem atque laboriosam fugiat laborum sequi, consequuntur, expedita amet minus nisi repellendus. Praesentium libero adipisci, soluta magni atque minus recusandae dolore eius blanditiis magnam inventore, reprehenderit animi aut illo!
+          Dolorem, laudantium. Harum accusamus dolorem accusantium consequatur consectetur sit in error atque qui ullam ab ipsa eius explicabo beatae, sint molestias eum nam aliquid? Obcaecati, exercitationem temporibus. Fuga, enim unde.
+          Provident voluptatibus repellendus aperiam qui necessitatibus. Ratione aliquam consequatur excepturi culpa quisquam eligendi beatae dolores qui, optio libero pariatur iure eos deleniti quam, voluptatum, totam dignissimos tempora inventore dolore ullam!
+          Omnis labore reiciendis quis soluta. Velit, quos impedit? Eaque consequatur tempore dolor unde blanditiis doloribus quod voluptate debitis, aspernatur inventore doloremque corporis nostrum quam id totam tempora quaerat vitae ipsam.
+          Deleniti officiis labore molestias temporibus qui voluptas ab modi quia laudantium iste nisi, illum pariatur facilis officia nulla doloremque voluptatem ratione ducimus error! Sint enim totam dolorum? Repellat, perspiciatis accusantium.
+          Unde molestias dignissimos quibusdam cum sapiente recusandae exercitationem consequuntur quis odio eligendi doloremque, vero laborum consectetur incidunt assumenda natus beatae! Assumenda qui inventore fuga magni praesentium fugiat provident deserunt quasi?
+          Fugit, minima error adipisci repudiandae velit laborum debitis praesentium quis hic pariatur tenetur possimus, ducimus atque optio itaque repellat ut, sunt libero consectetur esse perferendis. Provident quo corporis animi repellat!
+          Natus laborum commodi atque, eligendi voluptatem eos ex praesentium fugit, obcaecati accusamus laudantium, optio velit at incidunt dolor inventore. Quae officiis iusto architecto ab error in, sed necessitatibus nisi dolorum!
+          Libero nihil nisi nam aperiam, deleniti repellendus rerum modi rem adipisci placeat tempore atque neque provident voluptatum odio quo voluptatibus officiis, illo reiciendis dolore vitae perferendis unde sunt nemo! Debitis.
+          Temporibus excepturi autem eum aut aperiam recusandae minima quam numquam itaque, id consectetur dolores sapiente doloribus illum perferendis consequuntur amet quis ea dicta fuga quibusdam doloremque illo. Sit, ex tempora.
+          Libero, pariatur. Laudantium itaque similique dolorem accusamus ea. Alias tempore consequuntur in cumque, repellat facere quos vitae assumenda, quis quasi aut! Nobis tempore molestias repellat, laborum accusamus magni reiciendis exercitationem!
+          Harum iure eum expedita officiis beatae odio in deleniti, voluptates, ad id voluptatum maxime animi est consequatur! Impedit dicta ipsam neque optio excepturi, blanditiis quos rem, distinctio esse iure adipisci!
+          Sint consequatur tempora architecto qui, dolores ad eos odio recusandae aspernatur commodi aperiam? Dignissimos, qui. Nam sapiente recusandae voluptatem molestias nemo dolorem dolorum ipsum beatae officia, nulla iusto expedita explicabo.
+          Placeat sequi velit fuga tenetur at beatae, laboriosam amet dolores eius magni quisquam delectus repellendus quia deserunt tempore quod, praesentium vero vitae repudiandae nobis numquam dolor ab. Iste, doloremque? Totam?
+          Itaque odio voluptatibus minus aspernatur recusandae dolorem, corrupti delectus ab tempore unde nesciunt laboriosam reiciendis fugiat, tenetur doloremque amet sapiente cupiditate optio qui quia in! Eos obcaecati quisquam ipsum culpa?
+          Quos doloremque eligendi cumque totam, provident at veritatis ab! Recusandae, iste odio excepturi itaque quidem provident accusamus unde alias modi magnam neque mollitia veritatis architecto doloremque dignissimos eveniet praesentium corrupti!
+          Vero eveniet repellendus iusto natus optio architecto minus incidunt corrupti velit perferendis dicta soluta odit necessitatibus ipsa accusamus culpa nihil, accusantium exercitationem maxime laborum nulla corporis quis. Adipisci, sit dolorem.
+          Blanditiis dolorum quia atque laborum, cupiditate ab minus. Eaque accusantium consectetur veritatis labore rerum soluta repellat ullam doloremque natus, odio impedit alias illo facilis nobis corporis in ipsum quis sunt!
+          Iusto beatae, dolor voluptates similique quam hic magni voluptatibus aliquid quos, mollitia cumque eos! Odit suscipit laudantium aliquam voluptas ab error, facere voluptate impedit eius eum sed iure ducimus veniam!
+          Cum eligendi aliquam laboriosam, corporis, quis sint eum quidem, recusandae sunt sit accusantium incidunt repudiandae. Magni ex sint nulla error deleniti aut eligendi officia in ipsa, placeat animi doloremque suscipit.
+          Quod rem eius explicabo porro amet mollitia possimus hic iste suscipit, ab beatae quos laborum non pariatur nulla placeat voluptas architecto aut iure! Ipsum voluptates impedit veritatis sit, beatae perferendis.
+          Ipsum, ad quibusdam! Nulla esse tempora dolore, alias veniam dicta, corrupti, dignissimos excepturi totam itaque aperiam quas. Tenetur dignissimos optio aspernatur corporis, voluptas earum obcaecati. Quasi cupiditate beatae nemo sit.
+          Sequi maiores nobis magni deserunt, consequuntur aliquam autem ducimus, nisi eos modi adipisci corporis possimus illo et at fugit repudiandae earum cupiditate iusto voluptatem quam. Dicta dignissimos consequatur perferendis blanditiis?
+        </p>
+      </main>
+      <footer class="relative">
+        <img src="./assets/sky-view.jpg" alt="blue-jungle" class="w-full h-full bg-cover">
+        <img id="footer-moon" src="./assets/purple-moon.png" alt="purple-moon" class="drop-shadow-2xl w-52 h-52 sm:w-80 sm:h-80 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+      </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
