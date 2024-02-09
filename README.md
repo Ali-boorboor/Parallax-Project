@@ -1,5 +1,5 @@
 # Parallax project
-## In this project we have parallax scroll effect with responsive design 😎
+## In this project we have parallax scroll effect 😎
 -----
 >> It designed with tailwind css and vanilla js and vite bundler.<br>
 >> Try Free <a href="https://ali-boorboor.github.io/Parallax-Project/">Demo Here<a/>
