@@ -8,8 +8,8 @@ window.addEventListener ("scroll", () => {
   const headerTitle = $.getElementById ( "header-title" );
   const moon = $.getElementById ( "moon" );
   const frontMountain = $.getElementById ( "front-mountain" );
-  const leftCloud = $.getElementById ( "left-cloud" );
-  const rightCloud = $.getElementById ( "right-cloud" );
+  // const leftCloud = $.getElementById ( "left-cloud" );
+  // const rightCloud = $.getElementById ( "right-cloud" );
   const mainTitleElem = $.getElementById ( "main-title" );
   const footerMoon = $.getElementById ( "footer-moon" );
   const scrollPosition = window.scrollY;
@@ -17,8 +17,8 @@ window.addEventListener ("scroll", () => {
   headerTitle.style.transform = `translateY(${scrollPosition * 0.60}%)`;
   moon.style.transform = `translateY(${scrollPosition * 1}%)`;
   frontMountain.style.transform = `translateY(${scrollPosition * 0.25}%)`;
-  leftCloud.style.transform = `translateX(-${scrollPosition * 0.60}%)`;
-  rightCloud.style.transform = `translateX(${scrollPosition * 0.60}%)`;
+  // leftCloud.style.transform = `translateX(-${scrollPosition * 0.60}%)`;
+  // rightCloud.style.transform = `translateX(${scrollPosition * 0.60}%)`;
   window.innerWidth > 900 ? mainTitleElem.style.transform = `translateX(${scrollPosition * 0.04}%)` : mainTitleElem.style.textAlign = "center";
   footerMoon.style.transform = `translate(-50%, -50%) rotate(${scrollPosition * 0.25}deg)`;
 });
